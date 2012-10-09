@@ -1,0 +1,8 @@
+erlang-jiffy source package infomation
+
+- Remove from rebar bianry from source code.
+
+  Erlang-jiffy's original source codes contains rebar binary.
+  The source package of Debian has deleted this binary.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org> Wed, 10 Oct 2012 01:27:25 +0900

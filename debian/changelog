@@ -1,5 +1,5 @@
 erlang-jiffy (0.5.2+dfsg-1) unstable; urgency=low
 
-  * Initial release.
+  * Initial release. (Closes: #690107)
 
  -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Wed, 10 Oct 2012 01:24:25 +0900

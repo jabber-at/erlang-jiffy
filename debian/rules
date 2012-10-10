@@ -14,7 +14,7 @@ override_dh_auto_clean:
 	dh_auto_clean
 
 override_dh_auto_build:
-	rebar compile -vv skip_deps=true # deps_dir=/usr/lib/erlang/lib/proper-1.0/
+	rebar compile -vv skip_deps=true 
 
 override_dh_auto_install:
 	dh_auto_install

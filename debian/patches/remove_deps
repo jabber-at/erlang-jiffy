@@ -1,0 +1,16 @@
+Description: Remove deps from rebar.config
+Author: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Origin: vendor
+Forwarded: not-needed
+Last-Update: <2012-10-10>
+
+--- erlang-jiffy-0.5.2+dfsg.orig/rebar.config
++++ erlang-jiffy-0.5.2+dfsg/rebar.config
+@@ -1,7 +1,3 @@
+-{deps, [
+-    {proper, ".*", {git, "https://github.com/manopapad/proper.git", "master"}}
+-]}.
+-
+ {port_specs, [{"priv/jiffy.so", ["c_src/*.c"]}]}.
+ 
+ {port_env, [

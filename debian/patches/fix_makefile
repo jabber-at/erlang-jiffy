@@ -1,0 +1,27 @@
+Description: Fix makefile
+Origin: vendor
+Forwarded: not-needed
+Last-Update: <2012-10-10>
+
+--- erlang-jiffy-0.5.2+dfsg.orig/Makefile
++++ erlang-jiffy-0.5.2+dfsg/Makefile
+@@ -17,8 +17,8 @@ depends:
+ 	fi
+ 
+ 
+-build: depends
+-	$(REBAR) compile
++build:
++	$(REBAR) compile -vv skip_deps=true
+ 
+ 
+ etap: test/etap.beam test/util.beam
+@@ -26,7 +26,7 @@ etap: test/etap.beam test/util.beam
+ 
+ 
+ eunit:
+-	$(REBAR) eunit skip_deps=true
++	$(REBAR) eunit -vv skip_deps=true
+ 
+ 
+ check: build etap eunit

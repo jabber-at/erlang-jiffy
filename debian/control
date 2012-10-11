@@ -16,7 +16,7 @@ Section: devel
 Priority: optional
 Depends: ${shlibs:Depends}, ${misc:Depends},
 	erlang-base-hipe | erlang-base | ${erlang-abi:Depends}, ${erlang:Depends},
-	erlang-proper
+	erlang-xmerl, erlang-proper
 Description: JSON NIFs (Native Implemented Functions) for Erlang
  A JSON parser as a NIF (Native Implemented Functions). This is a complete
  rewrite of the work this was done in EEP0018 that was based on Yajl. This

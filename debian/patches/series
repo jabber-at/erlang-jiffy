@@ -1,2 +1,3 @@
 fix_version_string
 fix_makefile
+remove_git_clean

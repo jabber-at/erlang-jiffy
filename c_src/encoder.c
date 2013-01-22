@@ -253,7 +253,6 @@ enc_string(Encoder* e, ERL_NIF_TERM val)
         switch((char) data[i]) {
             case '\"':
             case '\\':
-            case '/':
             case '\b':
             case '\f':
             case '\n':
@@ -300,7 +299,6 @@ enc_string(Encoder* e, ERL_NIF_TERM val)
         switch((char) data[i]) {
             case '\"':
             case '\\':
-            case '/':
                 e->p[e->i++] = '\\';
                 e->u[e->i++] = data[i];
                 i++;
@@ -705,7 +703,7 @@ encode(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
                 goto done;
             }
         }
-    } while(!enif_is_empty_list(env, stack));
+    }
 
     if(!enc_done(e, &item)) {
         ret = enc_error(e, "internal_error");

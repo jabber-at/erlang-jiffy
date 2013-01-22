@@ -1,6 +1,8 @@
 erlang-jiffy (0.7.0+dfsg-1) unstable; urgency=low
 
   * New upstream release.
+  * Add patches/remove_git_clean.
+  * Remove patches/remove_deps.
 
  -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 22 Jan 2013 12:47:44 +0900
 

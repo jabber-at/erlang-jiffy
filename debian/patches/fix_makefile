@@ -1,22 +1,24 @@
 Description: Fix makefile
 Origin: vendor
 Forwarded: not-needed
-Last-Update: <2012-10-10>
+Last-Update: <2013-01-22>
 
---- erlang-jiffy-0.5.2+dfsg.orig/Makefile
-+++ erlang-jiffy-0.5.2+dfsg/Makefile
-@@ -17,8 +17,8 @@ depends:
+diff --git a/Makefile b/Makefile
+index 1aa9a1b..907ddf2 100644
+--- a/Makefile
++++ b/Makefile
+@@ -25,8 +25,8 @@ depends: devmarker
  	fi
  
  
 -build: depends
 -	$(REBAR) compile
 +build:
-+	$(REBAR) compile -vv skip_deps=true
++	$(REBAR) compile -vv
  
  
  etap: test/etap.beam test/util.beam
-@@ -26,7 +26,7 @@ etap: test/etap.beam test/util.beam
+@@ -34,7 +34,7 @@ etap: test/etap.beam test/util.beam
  
  
  eunit:

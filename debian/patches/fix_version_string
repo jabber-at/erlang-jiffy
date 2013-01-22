@@ -9,7 +9,7 @@ Last-Update: <2012-10-10>
  {application, jiffy, [
      {description, "JSON Decoder/Encoder."},
 -    {vsn, git},
-+    {vsn, "0.5.2"},
++    {vsn, "0.7.0"},
      {registered, []},
      {applications, [kernel]}
  ]}.

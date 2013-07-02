@@ -4,12 +4,15 @@ erlang-jiffy (0.8.4+dfsg-1) unstable; urgency=low
   * Add watch file.
     Thanks to Bart Martens.
   * Update patches.
+    - Update patches/fix_version_string to 0.8.4
+  * Add patches.
     - Add patches for fix FTBFS.
 	  Add 0001-Fix-typo-in-utils.h.patch and
 	      0002-__GNUC__-is-a-better-choice-than-__GCC__.patch
-    - Update patches/fix_version_string to 0.8.4
     - Add 0001-Add-check-for-below-array-bounds.patch.
 	  Fix build with -Werror=array-bounds.
+    - Add patches/change_optimize.
+      Change optimize from O3 to O2.
 
  -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 02 Jul 2013 12:36:53 +0900
 

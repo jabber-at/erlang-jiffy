@@ -1,0 +1,18 @@
+Description: Change optimize
+Origin: debian
+Forwarded: not-needed
+Last-Update: <2013-07-02>
+
+diff --git a/rebar.config b/rebar.config
+index f992d04..f747f92 100644
+--- a/rebar.config
++++ b/rebar.config
+@@ -7,7 +7,7 @@
+ ]}.
+ 
+ {port_env, [
+-    {".*", "CXXFLAGS", "$CXXFLAGS -g -Wall -Werror -O3"},
++    {".*", "CXXFLAGS", "$CXXFLAGS -g -Wall -Werror -O2"},
+ 
+     {"(linux|solaris|freebsd|netbsd|openbsd|dragonfly|darwin)",
+         "LDFLAGS", "$LDFLAGS -lstdc++"},

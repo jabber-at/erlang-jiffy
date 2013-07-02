@@ -1,3 +1,5 @@
 fix_version_string
 fix_makefile
 remove_git_clean
+0001-Fix-typo-in-utils.h.patch
+0002-__GNUC__-is-a-better-choice-than-__GCC__.patch

@@ -1,0 +1,26 @@
+From f5f5e53f50a6879c581856249e34cef74a5e0368 Mon Sep 17 00:00:00 2001
+From: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
+Date: Tue, 2 Jul 2013 12:45:55 +0900
+Subject: [PATCH 2/2] __GNUC__ is a better choice than __GCC__
+
+Signed-off-by: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
+---
+ c_src/double-conversion/utils.h |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/c_src/double-conversion/utils.h b/c_src/double-conversion/utils.h
+index 7fb7f04..9ebb9ee 100644
+--- a/c_src/double-conversion/utils.h
++++ b/c_src/double-conversion/utils.h
+@@ -299,7 +299,7 @@ class StringBuilder {
+ // PJD: 4-24-2013
+ //
+ 
+-#if defined(__GCC__)
++#if defined(__GNUC__)
+ #define UNUSED __attribute__((unused))
+ #else
+ #define UNUSED
+-- 
+1.7.10.4
+

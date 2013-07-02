@@ -1,0 +1,4 @@
+version=3
+opts=uversionmangle=s/_/./g \
+https://github.com/davisp/jiffy/tags .*/(?:v||jiffy[_\-])(\d.*)\.(?:tgz|tbz2|txz|tar\.(?:gz|bz2|xz))
+# Bart Martens <bartm@debian.org>  Sun, 06 Jan 2013 20:51:23 +0000

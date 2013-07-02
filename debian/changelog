@@ -1,6 +1,8 @@
 erlang-jiffy (0.8.4+dfsg-1) unstable; urgency=low
 
   * New upstream release.
+  * Add watch file.
+    Thanks to Bart Martens.
 
  -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 02 Jul 2013 12:36:53 +0900
 

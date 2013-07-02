@@ -3,6 +3,11 @@ erlang-jiffy (0.8.4+dfsg-1) unstable; urgency=low
   * New upstream release.
   * Add watch file.
     Thanks to Bart Martens.
+  * Update patches.
+    - Add patches for fix FTBFS.
+	  Add 0001-Fix-typo-in-utils.h.patch and
+	      0002-__GNUC__-is-a-better-choice-than-__GCC__.patch
+    - Update patches/fix_version_string to 0.8.4
 
  -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 02 Jul 2013 12:36:53 +0900
 

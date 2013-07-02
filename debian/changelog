@@ -1,3 +1,9 @@
+erlang-jiffy (0.8.4+dfsg-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Tue, 02 Jul 2013 12:36:53 +0900
+
 erlang-jiffy (0.7.0+dfsg-1) unstable; urgency=low
 
   * New upstream release.

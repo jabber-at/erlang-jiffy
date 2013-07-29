@@ -2,8 +2,10 @@
 
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
-
+CFLAGS:= $(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
 CFLAGS += -fsigned-char
+CXXFLAGS:= $(shell dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
+CXXFLAGS += -fsigned-char
 
 PACKAGE=jiffy
 VERSION = $(shell dpkg-parsechangelog | sed -rne 's/^Version: ([0-9.]+)(\+dfsg)?.*$$/\1/p')
@@ -28,7 +30,7 @@ override_dh_auto_install:
 		$(CURDIR)/debian/erlang-$(PACKAGE)/usr/lib/erlang/lib/$(PACKAGE)-$(VERSION)/priv/
 
 override_dh_gencontrol-arch:
-	erlang-depends -v -a -perlang-$(PACKAGE)
+	erlang-depends -a -perlang-$(PACKAGE)
 	dh_gencontrol -a -perlang-$(PACKAGE)
 
 override_dh_compress:

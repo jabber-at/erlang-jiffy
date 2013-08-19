@@ -4,6 +4,8 @@ erlang-jiffy (0.8.4+dfsg-3) unstable; urgency=low
     - Add dh-rebar to Build-Depends.
   * Update debian/rules.
     - Changed to use dh-rebar.
+  * Fix debian/watch.
+    - Fix debian-watch-file-should-mangle-version.
 
  -- Nobuhiro Iwamatsu <iwamatsu@debian.org>  Mon, 19 Aug 2013 21:07:01 +0900
 

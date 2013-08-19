@@ -2,6 +2,7 @@ erlang-jiffy (0.8.4+dfsg-3) unstable; urgency=low
 
   * Update debian/control.
     - Add dh-rebar to Build-Depends.
+    - Remove Section and Priority section from erlang-jiffy.
   * Update debian/rules.
     - Changed to use dh-rebar.
   * Fix debian/watch.

@@ -12,8 +12,6 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-leofs/erlang-jiffy.git
 
 Package: erlang-jiffy
 Architecture: any
-Section: devel
-Priority: optional
 Depends: ${shlibs:Depends}, ${misc:Depends},
 	erlang-base-hipe | erlang-base | ${erlang-abi:Depends}, ${erlang:Depends},
 	erlang-xmerl, erlang-proper

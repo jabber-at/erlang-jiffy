@@ -1,37 +1,13 @@
 #!/usr/bin/make -f
 
-DPKG_EXPORT_BUILDFLAGS = 1
-include /usr/share/dpkg/buildflags.mk
 CFLAGS:= $(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
 CFLAGS += -fsigned-char
 CXXFLAGS:= $(shell dpkg-buildflags --get CXXFLAGS) $(CPPFLAGS)
 CXXFLAGS += -fsigned-char
 
-PACKAGE=jiffy
-VERSION = $(shell dpkg-parsechangelog | sed -rne 's/^Version: ([0-9.]+)(\+dfsg)?.*$$/\1/p')
-
 %:
-	REBAR=rebar dh $@
+	dh $@ --buildsystem=rebar --with rebar
 
 override_dh_auto_clean:
 	rm -rf ebin priv
 	dh_auto_clean
-
-override_dh_auto_install:
-	dh_auto_install
-
-	install -d \
-		$(CURDIR)/debian/erlang-$(PACKAGE)/usr/lib/erlang/lib/$(PACKAGE)-$(VERSION)/ebin
-	install -m 644 ebin/* \
-		$(CURDIR)/debian/erlang-$(PACKAGE)/usr/lib/erlang/lib/$(PACKAGE)-$(VERSION)/ebin/
-	install -d \
-		$(CURDIR)/debian/erlang-$(PACKAGE)/usr/lib/erlang/lib/$(PACKAGE)-$(VERSION)/priv
-	install -m 644 priv/* \
-		$(CURDIR)/debian/erlang-$(PACKAGE)/usr/lib/erlang/lib/$(PACKAGE)-$(VERSION)/priv/
-
-override_dh_gencontrol-arch:
-	erlang-depends -a -perlang-$(PACKAGE)
-	dh_gencontrol -a -perlang-$(PACKAGE)
-
-override_dh_compress:
-	dh_compress -X.erl -X.beam

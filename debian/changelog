@@ -1,4 +1,4 @@
-erlang-jiffy (0.8.5+dfsg-1) UNRELEASED; urgency=low
+erlang-jiffy (0.8.5+dfsg-1) unstable; urgency=low
 
   * New upstream release (0.8.5).
   * Update debian/copyright.

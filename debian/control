@@ -1,14 +1,13 @@
 Source: erlang-jiffy
-Maintainer: LeoFS maintainers team <pkg-leofs-devel@lists.alioth.debian.org>
-Uploaders: Taku YASUI <tach@debian.org>, Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Maintainer: Mathias Ertl <mati@jabber.at>
 Section: devel
 Priority: optional
 Standards-Version: 3.9.4
 Homepage: https://github.com/davisp/jiffy
 Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1~), erlang-dev (>= 1:13.b.4),
 	erlang-eunit, erlang-xmerl, erlang-dialyzer, erlang-proper-dev, dh-rebar
-Vcs-Git: git://anonscm.debian.org/pkg-leofs/erlang-jiffy.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-leofs/erlang-jiffy.git
+Vcs-Git: https://github.com/jabber-at/erlang-jiffy.git
+Vcs-Browser: https://github.com/jabber-at/erlang-jiffy
 
 Package: erlang-jiffy
 Architecture: any

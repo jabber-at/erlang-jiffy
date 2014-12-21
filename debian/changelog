@@ -1,6 +1,7 @@
 erlang-jiffy (0.13.3+dfsg-1) unstable; urgency=low
 
   * New upstream release (0.13.3)
+  * Now maintaining this package for https://apt.jabber.at.
 
  -- Mathias Ertl <mati@jabber.at>  Sun, 21 Dec 2014 14:59:02 +0100
 

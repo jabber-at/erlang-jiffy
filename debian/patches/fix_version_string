@@ -3,13 +3,13 @@ Origin: vendor
 Forwarded: not-needed
 Last-Update: <2012-10-10>
 
---- erlang-jiffy-0.5.2+dfsg.orig/src/jiffy.app.src
-+++ erlang-jiffy-0.5.2+dfsg/src/jiffy.app.src
+--- a/src/jiffy.app.src
++++ b/src/jiffy.app.src
 @@ -1,6 +1,6 @@
  {application, jiffy, [
      {description, "JSON Decoder/Encoder."},
 -    {vsn, git},
 +    {vsn, "0.8.4"},
      {registered, []},
-     {applications, [kernel]}
+     {applications, [kernel, stdlib]}
  ]}.

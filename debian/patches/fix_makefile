@@ -3,11 +3,9 @@ Origin: vendor
 Forwarded: not-needed
 Last-Update: <2013-01-22>
 
-diff --git a/Makefile b/Makefile
-index 1aa9a1b..907ddf2 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -25,8 +25,8 @@ depends: devmarker
+@@ -25,12 +25,12 @@
  	fi
  
  
@@ -17,13 +15,9 @@ index 1aa9a1b..907ddf2 100644
 +	$(REBAR) compile -vv
  
  
- etap: test/etap.beam test/util.beam
-@@ -34,7 +34,7 @@ etap: test/etap.beam test/util.beam
- 
- 
  eunit:
 -	$(REBAR) eunit skip_deps=true
 +	$(REBAR) eunit -vv skip_deps=true
  
  
- check: build etap eunit
+ check: build eunit

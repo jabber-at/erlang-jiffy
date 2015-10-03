@@ -5,6 +5,7 @@ erlang-jiffy (0.14.3-0.1) unstable; urgency=low
   * Use upstream release tags.
   * Use Debian revision 0.1 so official packages would override this package.
   * Update copyright information for new files.
+  * Ignore vim swap files in debian/.
 
  -- Mathias Ertl <mati@jabber.at>  Sat, 03 Oct 2015 14:40:48 +0200
 

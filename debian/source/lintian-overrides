@@ -1,2 +1,13 @@
 source: maintainer-upload-has-incorrect-version-number
 source: debian-rules-ignores-make-clean-error line 14
+source: file-without-copyright-information .gitignore
+source: file-without-copyright-information .travis.yml
+source: file-without-copyright-information LICENSE
+source: file-without-copyright-information Makefile
+source: file-without-copyright-information README.md
+source: file-without-copyright-information plugins/rebar_gdb_plugin.erl
+source: file-without-copyright-information rebar
+source: file-without-copyright-information rebar.config
+source: file-without-copyright-information rebar.config.script
+source: file-without-copyright-information test/cases/short-doubles.txt
+source: file-without-copyright-information test/jiffy_util.hrl

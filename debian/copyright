@@ -3,7 +3,7 @@ Upstream-name: jiffy
 Upstream-contact: Paul J. Davis <paul.joseph.davis@gmail.com>
 Source: https://github.com/davisp/jiffy
 
-Files: c_src/* src/* test/*.t
+Files: c_src/* src/* test/*.t test/*.erl
 Copyright: 2011 Paul J. Davis <paul.joseph.davis@gmail.com>
 License: Expat
 
@@ -12,7 +12,7 @@ Copyright: 2008-2009 Nick Gerakines <nick@gerakines.net>
            2007-2008 Jeremy Wall <jeremy@marzhillstudios.com>
 License: Expat
 
-Files: test/cases/*.json
+Files: test/cases/*.json test/cases/*.eterm
 Copyright: 2010, Lloyd Hilaiel.
 License: BSD-3-clause
 

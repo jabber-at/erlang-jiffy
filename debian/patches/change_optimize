@@ -5,14 +5,15 @@ Last-Update: <2013-07-02>
 
 --- a/rebar.config
 +++ b/rebar.config
-@@ -7,8 +7,8 @@
- ]}.
+@@ -8,9 +8,9 @@
  
  {port_env, [
--    {".*", "CFLAGS", "$CFLAGS -g -Wall -Werror -O3 -fno-strict-aliasing"},
--    {".*", "CXXFLAGS", "$CXXFLAGS -g -Wall -Werror -O3"},
-+    {".*", "CFLAGS", "$CFLAGS -g -Wall -Werror -O2 -fno-strict-aliasing"},
-+    {".*", "CXXFLAGS", "$CXXFLAGS -g -Wall -Werror -O2"},
+     {"(linux|solaris|freebsd|netbsd|openbsd|dragonfly|darwin)",
+-        "CFLAGS", "$CFLAGS -Ic_src/ -g -Wall -Werror -O3 -fno-strict-aliasing"},
++        "CFLAGS", "$CFLAGS -Ic_src/ -g -Wall -Werror -O2 -fno-strict-aliasing"},
+     {"(linux|solaris|freebsd|netbsd|openbsd|dragonfly|darwin)",
+-        "CXXFLAGS", "$CXXFLAGS -Ic_src/ -g -Wall -Werror -O3"},
++        "CXXFLAGS", "$CXXFLAGS -Ic_src/ -g -Wall -Werror -O2"},
  
      {"(linux|solaris|freebsd|netbsd|openbsd|dragonfly|darwin)",
          "LDFLAGS", "$LDFLAGS -lstdc++"},

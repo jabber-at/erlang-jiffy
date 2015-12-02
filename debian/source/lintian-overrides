@@ -1,6 +1,6 @@
 source: maintainer-upload-has-incorrect-version-number
 source: unknown-field-in-dsc orig-uploaders
-source: unknown-field-in-dsc orig-maintainers
+source: unknown-field-in-dsc orig-maintainer
 source: debian-rules-ignores-make-clean-error line 14
 source: file-without-copyright-information .gitignore
 source: file-without-copyright-information .travis.yml

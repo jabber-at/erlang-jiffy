@@ -1,6 +1,7 @@
 erlang-jiffy (0.14.5-0.1) unstable; urgency=low
 
   * New upstream release.
+  * debian/control: Restore original Maintainer/Upload fields as XSBC-Orig-*.
 
  -- Mathias Ertl <mati@jabber.at>  Wed, 02 Dec 2015 20:51:05 +0100
 

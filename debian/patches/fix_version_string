@@ -11,5 +11,5 @@ Last-Update: <2012-10-10>
 -    {vsn, git},
 +    {vsn, "0.14.3"},
      {registered, []},
-     {applications, [kernel, stdlib]}
- ]}.
+     {applications, [kernel, stdlib]},
+     {maintainers, ["Paul J. Davis"]},

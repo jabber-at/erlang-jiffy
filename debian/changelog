@@ -1,3 +1,9 @@
+erlang-jiffy (0.14.8-0.1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Mathias Ertl <mati@jabber.at>  Sun, 29 Jan 2017 12:09:32 +0100
+
 erlang-jiffy (0.14.7-0.1) unstable; urgency=low
 
   * New upstream release.
